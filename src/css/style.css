@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: 'TTLakes-Regular';
+    src: url('../font/TT Lakes Regular.woff2') format('woff2'),
+         url('../font/TT Lakes Regular.woff') format('woff'),
+         url('../font/TT Lakes Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TTLakes-Bold';
+    src: url('../font/TT Lakes Bold.woff2') format('woff2'),
+         url('../font/TT Lakes Bold.woff') format('woff'),
+         url('../font/TT Lakes Bold.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TTLakes-Medium';
+    src: url('../font/TTLakes-Medium.woff2') format('woff2'),
+         url('../font/TTLakes-Medium.woff') format('woff'),
+         url('../font/TTLakes-Medium.ttf') format('ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+.heading {
+    font-family: TTLakes-Regular;
+    color: #7E7E82;
+    margin: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    
+    
+}
+
+.header {
+    width: 320px;
+    height: 80px;
+
+}
+
+.swiper {
+    margin-top: 16px;
+    width: 200px; /* Ширина слайдера */
+    height: 100px; /* Высота слайдера */
+} 
+
+
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+
+
+  .brands_hidden {
+    display: none;
+  }
+
+  .barnds-item-slide {
+    display: flex;
+    width: 224px;
+    height: 72px;
+    border: 1px solid white;
+    justify-content: center;
+}
+.brand {
+    flex: 0 1 108px;
+
+}
+
+.go {
+    width: 40px;
+    margin: 16px;;
+    
+}
+
+.gogo:hover {
+    transform: translateX(10px);
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.footer {
+    display: flex;
+    justify-content: start;
+}
+
+.swiper-wrapper {
+    margin-right: auto;
+}
+
+
+
+
+@media  (max-width: 320px) {
+
+    .conteiner {
+        width: 320px;
+        height: 234px;
+        
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .show-more-container {
+        display: none;
+    }
+
+
+
+    .header {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer {
+        width: 100%;
+        height: 100px;
+        margin-top: 16px;
+    }
+
+    .swiper {
+        width: 100%;
+        height: auto;
+        margin-left: 16px;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        object-fit: cover;
+        border: 1px solid #ccc;
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-pagination {
+        display: flex;
+        justify-content: center;
+        margin-left: 16px;
+    }
+
+    .brands__item {
+        display: flex;
+        align-self: center;
+        width: 230px;
+        border: 1px solid #EAEAEA;
+        
+    }
+
+    .brands-item-slide { 
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between;
+        width: 224px;
+        height: 72px;
+        border: 1px solid white;
+        padding: 8px; 
+    }
+    
+    .brand {
+        flex: 0 0 auto; 
+        max-width: 108px; 
+        height: auto; 
+    }
+
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+    .conteiner {
+        width: 768px;
+        height: 322px;
+
+    }
+
+
+    .header {
+        width: 100%;
+    }
+
+
+
+    .brands {
+        width: 768px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        padding-left: 24px;
+        
+    }
+
+    .brands__item {
+        display: flex;
+        align-self: center;
+        width: 230px;
+        border: 1px solid #EAEAEA;
+        
+    }
+
+    .brands-item-slide { 
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between;
+        width: 224px;
+        height: 72px;
+        border: 1px solid white;
+        padding: 8px;
+    }
+    
+    .brand {
+        flex: 0 0 auto; 
+        max-width: 108px; 
+        height: auto; 
+    }
+    
+    .go {
+        width: 40px;
+        margin: 0;
+    }
+
+    .show-more-container {
+        margin-top: 16px; 
+        padding-left: 24px;
+        text-align: left;
+    }
+
+
+
+    .brands__item:nth-child(7),
+    .brands__item:nth-child(8) {
+        display: none;
+    }
+
+
+    .brands__item_hidden{
+        display: none !important;
+    }
+
+    .footer{
+        display: none;
+    }
+
+    .show-more-container {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 16px;
+        padding-left: 24px;
+    }
+    
+    
+    .show-more__img {
+        width: 20px;
+        height: auto;
+    }
+    
+    
+    .show-more__link {
+        color: #1B1C21;
+        font-size: 14px;
+        text-decoration: none;
+        font-family: TTLakes-Regular ;
+    }
+    
+    .show-more-container:hover .show-more__img {
+        transform: rotate(180deg); 
+        transition: transform 0.3s ease;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1121px) {
+
+    .conteiner {
+        width: 1121px;
+        height: auto;
+
+
+    }
+
+    .brands__item_hidden{
+        display: none !important;
+    }
+
+    .footer{
+        display: none;
+    }
+
+
+
+    .header {
+        width: 100%;
+    }
+
+
+
+    .brands {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        /*border: 1px solid black;*/
+        padding-left: 24px;
+        
+    }
+
+    .brands__item {
+        display: flex;
+        align-self: center;
+        width: 230px;
+        border: 1px solid #EAEAEA;
+        
+    }
+
+    .brands-item-slide { 
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between; 
+        width: 224px;
+        height: 72px;
+        border: 1px solid white;
+        padding: 8px; 
+    }
+    
+    .brand {
+        flex: 0 0 auto; 
+        max-width: 108px; 
+        height: auto; 
+    }
+    
+    .go {
+        width: 40px;
+        margin: 0;
+    }
+
+    .show-more-container {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 16px; 
+        padding-left: 24px; 
+        text-align: left; 
+    }
+
+    .show-more__img {
+        width: 20px;
+        height: auto;
+    }
+    
+    
+    .show-more__link {
+        color: #1B1C21;
+        font-size: 16px;
+        text-decoration: none;
+        font-family: TTLakes-Regular ;
+    }
+
+    .show-more-container:hover .show-more__img {
+        transform: rotate(180deg); 
+        transition: transform 0.3s ease;
+    }
+
+
+}
