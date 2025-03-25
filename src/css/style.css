@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -32,6 +32,7 @@
     font-style: normal;
 }
 
+/* Заголовок */
 .heading {
     font-family: TTLakes-Regular;
     color: #7E7E82;
@@ -39,53 +40,61 @@
     font-size: 16px;
     line-height: 24px;
     letter-spacing: -0.2px;
-    
-    
 }
 
+/* Шапка */
 .header {
-    width: 320px;
+    width: 100%; 
+    /*max-width: 320px; */
     height: 80px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+/* Слайдер */
 .swiper {
     margin-top: 16px;
-    width: 200px; /* Ширина слайдера */
-    height: 100px; /* Высота слайдера */
-} 
+    width: 100%; 
+    max-width: 200px; 
+    height: auto; 
+}
 
-
-
-  .swiper-slide {
+.swiper-slide {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-  }
+    width: 100%; 
+    height: 100%; 
+}
 
 
-
-  .brands_hidden {
+.brands_hidden {
     display: none;
-  }
+}
 
-  .barnds-item-slide {
+
+.brands-item-slide {
     display: flex;
-    width: 224px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; 
+    max-width: 224px; 
     height: 72px;
     border: 1px solid white;
-    justify-content: center;
+    padding: 8px;
 }
-.brand {
-    flex: 0 1 108px;
 
+.brand {
+    flex: 0 0 auto;
+    max-width: 100%; 
+    height: auto;
 }
 
 .go {
-    width: 40px;
-    margin: 16px;;
-    
+    width: 100%; 
+    max-width: 40px; 
+    margin: 0;
 }
 
 .gogo:hover {
@@ -104,27 +113,21 @@
 }
 
 
-
-
-@media  (max-width: 320px) {
-
+@media (max-width: 320px) {
     .conteiner {
-        width: 320px;
-        height: 234px;
-        
+        width: 100%; 
+        max-width: 320px; 
+        height: auto;
         display: flex;
         flex-direction: column;
-
     }
 
     .show-more-container {
         display: none;
     }
 
-
-
     .header {
-        width: 100%;
+        width: 100%; 
         height: 80px;
         display: flex;
         align-items: center;
@@ -132,13 +135,13 @@
     }
 
     .footer {
-        width: 100%;
+        width: 100%; 
         height: 100px;
         margin-top: 16px;
     }
 
     .swiper {
-        width: 100%;
+        width: 100%; 
         height: auto;
         margin-left: 16px;
     }
@@ -150,8 +153,8 @@
         font-size: 24px;
         object-fit: cover;
         border: 1px solid #ccc;
-        width: 100%;
-        height: 100%;
+        width: 100%; 
+        height: 100%; 
     }
 
     .swiper-pagination {
@@ -163,223 +166,226 @@
     .brands__item {
         display: flex;
         align-self: center;
-        width: 230px;
+        width: 100%; 
+        max-width: 230px; 
         border: 1px solid #EAEAEA;
-        
     }
 
-    .brands-item-slide { 
-        display: flex; 
-        align-items: center; 
+    .brands-item-slide {
+        display: flex;
+        align-items: center;
         justify-content: space-between;
-        width: 224px;
+        width: 100%; 
+        max-width: 224px; 
         height: 72px;
         border: 1px solid white;
-        padding: 8px; 
+        padding: 8px;
     }
-    
-    .brand {
-        flex: 0 0 auto; 
-        max-width: 108px; 
-        height: auto; 
-    }
-
 }
+
 
 @media (min-width: 321px) and (max-width: 768px) {
     .conteiner {
-        width: 768px;
-        height: 322px;
-
+        width: 100%; 
+        max-width: 768px; 
+        height: auto;
     }
-
 
     .header {
-        width: 100%;
+        width: 100%; 
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 24px;
+        margin-bottom: 24px;
     }
 
+    .heading {
+        width: 100%;
+        flex-wrap: nowrap;
+    }
 
+    
 
     .brands {
-        width: 768px;
+        width: 100%; 
+        max-width: 768px; 
         height: auto;
         display: flex;
         flex-wrap: wrap;
         gap: 16px;
         padding-left: 24px;
-        
     }
 
     .brands__item {
         display: flex;
         align-self: center;
-        width: 230px;
+        width: 100%; 
+        max-width: 230px; 
         border: 1px solid #EAEAEA;
-        
     }
 
-    .brands-item-slide { 
-        display: flex; 
-        align-items: center; 
+    .brands-item-slide {
+        display: flex;
+        align-items: center;
         justify-content: space-between;
-        width: 224px;
+        width: 100%; 
+        max-width: 224px; 
         height: 72px;
         border: 1px solid white;
         padding: 8px;
     }
-    
+
     .brand {
-        flex: 0 0 auto; 
-        max-width: 108px; 
-        height: auto; 
+        flex: 0 0 auto;
+        max-width: 100%; 
+        height: auto;
     }
-    
+
     .go {
-        width: 40px;
+        width: 100%; 
+        max-width: 40px; 
         margin: 0;
     }
 
     .show-more-container {
-        margin-top: 16px; 
+        margin-top: 16px;
         padding-left: 24px;
         text-align: left;
+        display: flex;
+        align-items: center;
+        gap: 8px;
     }
-
-
 
     .brands__item:nth-child(7),
     .brands__item:nth-child(8) {
         display: none;
     }
 
-
-    .brands__item_hidden{
+    .brands__item_hidden {
         display: none !important;
     }
 
-    .footer{
+    .footer {
         display: none;
     }
 
-    .show-more-container {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        margin-top: 16px;
-        padding-left: 24px;
-    }
-    
-    
     .show-more__img {
-        width: 20px;
+        width: 1.5em; 
         height: auto;
     }
-    
-    
+
     .show-more__link {
         color: #1B1C21;
         font-size: 14px;
         text-decoration: none;
-        font-family: TTLakes-Regular ;
+        font-family: TTLakes-Regular;
     }
-    
+
     .show-more-container:hover .show-more__img {
-        transform: rotate(180deg); 
+        transform: rotate(180deg);
         transition: transform 0.3s ease;
     }
 }
 
+
 @media (min-width: 769px) and (max-width: 1121px) {
-
     .conteiner {
-        width: 1121px;
+        width: 100%; 
+        max-width: 1121px; 
         height: auto;
-
-
+        margin: 0 auto; 
     }
 
-    .brands__item_hidden{
+    .brands__item_hidden {
         display: none !important;
     }
 
-    .footer{
+    .footer {
         display: none;
     }
 
-
-
     .header {
-        width: 100%;
+        width: 100%; 
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 24px;
+        margin-bottom: 24px;
     }
 
-
+    .heading {
+        width: 100%;
+        flex-wrap: nowrap;
+    }
 
     .brands {
-        width: 100%;
+        width: 100%; 
         height: auto;
         display: flex;
         flex-wrap: wrap;
         gap: 16px;
-        /*border: 1px solid black;*/
         padding-left: 24px;
-        
     }
 
     .brands__item {
         display: flex;
         align-self: center;
-        width: 230px;
+        width: 100%; 
+        max-width: 230px; 
         border: 1px solid #EAEAEA;
-        
     }
 
-    .brands-item-slide { 
-        display: flex; 
-        align-items: center; 
-        justify-content: space-between; 
-        width: 240px;
+    .brands-item-slide {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%; 
+        max-width: 240px; 
         height: 72px;
         border: 1px solid white;
-        padding: 8px; 
+        padding: 8px;
     }
-    
+
     .brand {
-        flex: 0 0 auto; 
-        max-width: 108px; 
-        height: auto; 
+        flex: 0 0 auto;
+        max-width: 100%;
+        height: auto;
     }
-    
+
     .go {
-        width: 40px;
+        width: 100%; 
+        max-width: 40px; 
         margin: 0;
     }
 
     .show-more-container {
+        width: 100%; 
+        max-width: fit-content; 
+        margin-top: 16px;
+        padding-left: 24px;
+        text-align: left;
         display: flex;
         align-items: center;
         gap: 8px;
-        margin-top: 16px; 
-        padding-left: 24px; 
-        text-align: left; 
     }
 
     .show-more__img {
-        width: 20px;
+        width: 1.5em; 
         height: auto;
     }
-    
-    
+
     .show-more__link {
         color: #1B1C21;
         font-size: 16px;
         text-decoration: none;
-        font-family: TTLakes-Regular ;
+        font-family: TTLakes-Regular;
     }
 
     .show-more-container:hover .show-more__img {
-        transform: rotate(180deg); 
+        transform: rotate(180deg);
         transition: transform 0.3s ease;
     }
-
-
 }
