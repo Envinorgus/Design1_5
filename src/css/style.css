@@ -73,6 +73,13 @@
     display: none;
 }
 
+.brand__list {
+    display: flex;
+    width: 720px;
+    height: 184px;
+    border: 1px solid black;
+}
+
 
 .brands-item-slide {
     display: flex;
