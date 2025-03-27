@@ -124,6 +124,14 @@
     margin-right: auto;
 }
 
+.reset-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; 
+    overflow: hidden; 
+    padding: 0; 
+    margin: 0; 
+}
 
 @media (max-width: 320px) {
     .conteiner {
