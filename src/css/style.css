@@ -92,6 +92,11 @@
     padding: 8px;
 }
 
+.brands-item-slide {
+    max-width: 224px; 
+    height: 72px;
+}
+
 .brand {
     flex: 0 0 auto;
     max-width: 100%; 
@@ -217,6 +222,13 @@
         flex-wrap: nowrap;
     }
 
+    .brand__list {
+        display: flex;
+        width: 720px;
+        height: 184px;
+        border: 1px solid black;
+    }
+
     
 
     .brands {
@@ -225,7 +237,7 @@
         height: auto;
         display: flex;
         flex-wrap: wrap;
-        gap: 16px;
+        gap: 24px;
         padding-left: 24px;
     }
 
@@ -233,7 +245,7 @@
         display: flex;
         align-self: center;
         width: 100%; 
-        max-width: 230px; 
+        max-width: 224px; 
         border: 1px solid #EAEAEA;
     }
 
