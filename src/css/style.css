@@ -252,6 +252,7 @@
     .brands__item {
         display: flex;
         align-self: center;
+        flex-basis: 224px;
         width: 100%; 
         max-width: 224px; 
         border: 1px solid #EAEAEA;
